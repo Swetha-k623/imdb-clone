@@ -2,14 +2,16 @@
   "name": "imdb-clone",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://swetha-k623.github.io/imdb-web",
+  "homepage": "https://swetha-k623.github.io/imdb-clone/",
   "type": "module",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "vite build"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+,
   "dependencies": {
     "axios": "^1.10.0",
     "localforage": "^1.10.0",
