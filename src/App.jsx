@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Movies from "./components/Movies";
 import Watchlist from "./components/Watchlist";
 import Banner from "./components/Banner";
-
+import { Routes, Route } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -45,7 +45,7 @@ function App() {
             path="/"
             element={
               <>
-                <Banner />{" "}
+                <Banner />
                 <Movies
                   watchlist={watchlist}
                   handleAddtoWatchlist={handleAddtoWatchlist}
